@@ -98,7 +98,7 @@ public class Homework2_3 {
     Human[] sampleArray3 = {bill,walter,oscar,jessica,david,monica,mathew,stanley,rachel};
     Human[] finalArray3 = humanDelegate.joinHumansDistinctDifferentValues(inputArray1,inputArray2,sampleArray3);
 
-    //selection of all values from rightArray and all common different values
+    //selection of all values from rightArray and all common values+test
     Human[] rightJoinArrayTest = {john,sara,monica,mathew,adam,mathew,stanley,sara,michael,rachel,
             john,sara,sara,adam,sara,sara,michael};
     Human[] rightJoinArray = humanDelegate.rightJoinHumansValues(inputArray1,inputArray2,rightJoinArrayTest);
