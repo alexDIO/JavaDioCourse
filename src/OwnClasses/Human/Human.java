@@ -8,47 +8,42 @@ public class Human {
     private final int age;
     private final String profession;
 
-    private Human(Builder builder)
-    {
+    private Human(Builder builder){
         this.name=builder.name;
         this.age=builder.age;
         this.profession=builder.profession;
     }
 
-    public static class Builder
-    {
+    public static class Builder{
         private String name;
         private int age;
         private String profession;
 
-        public Builder()
-        {
+        public Builder(){
             this.build();
         }
 
-        public Builder(Human original)
-        {
+        public Builder(Human original){
             this.name=original.name;
             this.age=original.age;
             this.profession=original.profession;
         }
-        public Builder name (String name)
-        {
+
+        public Builder name (String name){
             this.name=name;
             return this;
         }
-        public Builder age (int age)
-        {
+
+        public Builder age (int age){
             this.age=age;
             return this;
         }
-        public Builder profession (String profession)
-        {
+        public Builder profession (String profession){
             this.profession=profession;
             return this;
         }
-        public Human build()
-        {
+
+        public Human build(){
             return new Human(this);
         }
     }
