@@ -2,10 +2,11 @@ package OwnClasses.Human;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static junit.framework.Assert.assertEquals;
+
 
 public class HumansTest {
-
+    //local code review (vtegza): use appropriate field access modificator @ 02.12.13
     Human john = new Human.Builder()
             .name("John")
             .age(20)

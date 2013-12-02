@@ -14,6 +14,7 @@ public class Human {
         this.profession=builder.profession;
     }
 
+    //local code review (vtegza): according to java conventions, inner classes should be last members in class @ 02.12.13
     public static class Builder{
         private String name;
         private int age;
@@ -83,8 +84,7 @@ public class Human {
  }
 
 
-
-
+//local code review (vtegza): this is actually not inner class, make it inner or move to separate file @ 02.12.13
 class SortHumanByAgeAndName implements Comparator<Human>{
     public int compare(Human human1, Human human2) {
 

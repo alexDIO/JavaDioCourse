@@ -2,7 +2,7 @@ package OwnClasses.Human;
 
 import java.util.Arrays;
 
-
+//local code review (vtegza): name it ib better way, if it is util class - it could be named as HumanUtils or HumanHelper @ 02.12.13
 public class Humans {
     //right join
     public Human[] rightJoinHumansValues(Human[] leftArray, Human[] rightArray) throws ArrayIndexOutOfBoundsException{
@@ -43,6 +43,7 @@ public class Humans {
 
         Human[] resultArray = new Human[index];
 
+        //local code review (vtegza): array copy could be used here @ 02.12.13
         for (int i=0;i<index;i++){
             resultArray[i] = tempArray[i];
         }
@@ -83,7 +84,7 @@ public class Humans {
         }
 
         Human[] resultArray = new Human[index];
-
+        //local code review (vtegza): array copu could be used here @ 02.12.13
         for (int i=0;i<index;i++){
             resultArray[i] = tempArray[i];
         }
@@ -125,7 +126,7 @@ public class Humans {
         }
 
         Human[] resultArray = new Human[index];
-
+        //local code review (vtegza): Array Copy could be used here @ 02.12.13
         for (int i=0;i<index;i++){
             resultArray[i] = tempArray[i];
         }

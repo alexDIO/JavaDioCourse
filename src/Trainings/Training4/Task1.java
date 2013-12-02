@@ -77,10 +77,12 @@ public class Task1 {
 
     public static int[] joinArraysValues(int[] array1, int[] array2){
         int[] resultArray = new int[array1.length + array2.length];
+        //local code review (vtegza): array copy could be used here @ 02.12.13
         for (int i=0;i<array1.length;i++){
             resultArray[i] = array1[i];
         }
 
+        //local code review (vtegza): array copy could be used here @ 02.12.13
         for (int i=0;i<array2.length;i++){
             resultArray[array1.length + i] = array2[i];
         }
